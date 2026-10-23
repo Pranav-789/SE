@@ -1,0 +1,160 @@
+# ==========================================
+# Environment Variables & Secrets
+# ==========================================
+.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+!.env.example
+!.env.*.example
+!.env.template
+
+# ==========================================
+# Python / FastAPI
+# ==========================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+pythonenv*
+
+# Package distribution / build artifacts
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Unit tests / Coverage / Linters
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pytype/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# SQLite / Databases (preserves seed database like flights.db)
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+!**/data/flights.db
+
+# ==========================================
+# Node.js / React / Next.js
+# ==========================================
+# Dependencies
+node_modules/
+jspm_packages/
+web_modules/
+.pnpm-store/
+
+# Next.js build output & cache
+.next/
+out/
+.swc/
+
+# Production build outputs (Vite, CRA, Webpack)
+dist/
+dist-ssr/
+build/
+storybook-static/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Caches
+.turbo/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+
+# TypeScript build info
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+
+# Testing (Jest, Vitest, Cypress, Playwright)
+coverage/
+cypress/videos/
+cypress/screenshots/
+test-results/
+playwright-report/
+blob-report/
+
+# Vercel deployment
+.vercel/
+
+# ==========================================
+# Operating System & IDEs
+# ==========================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+
+# IDEs & Editors
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace

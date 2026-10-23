@@ -1,0 +1,12 @@
+fastapi[standard]
+sqlalchemy
+asyncpg
+greenlet
+PyJWT
+bcrypt
+pydantic
+pydantic-settings
+python-dotenv
+fastapi-mail
+redis
+resend

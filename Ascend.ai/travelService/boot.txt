@@ -1,0 +1,8 @@
+How to Run
+1. Start the FastAPI Backend (Terminal 1)
+powershell
+.\.venv\Scripts\uvicorn app:app --reload --port 8000
+2. Start the React Frontend (Terminal 2)
+powershell
+cd client
+npm run dev
