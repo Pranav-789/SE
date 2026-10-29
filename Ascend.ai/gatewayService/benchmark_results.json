@@ -1,0 +1,230 @@
+[
+  {
+    "scenario": "Root / Endpoint - Baseline",
+    "total_requests": 1000,
+    "concurrency": 10,
+    "successful_requests": 1000,
+    "errors": 0,
+    "total_duration_sec": 0.825,
+    "rps": 1211.54,
+    "min_ms": 0.64,
+    "mean_ms": 8.04,
+    "p50_ms": 7.62,
+    "p90_ms": 11.97,
+    "p95_ms": 13.51,
+    "p99_ms": 21.67,
+    "max_ms": 30.97,
+    "status_distribution": {
+      "200": 1000
+    }
+  },
+  {
+    "scenario": "Root / Endpoint - Concurrency Scaling",
+    "total_requests": 3000,
+    "concurrency": 50,
+    "successful_requests": 3000,
+    "errors": 0,
+    "total_duration_sec": 2.598,
+    "rps": 1154.63,
+    "min_ms": 11.3,
+    "mean_ms": 43.05,
+    "p50_ms": 41.82,
+    "p90_ms": 55.95,
+    "p95_ms": 61.27,
+    "p99_ms": 74.43,
+    "max_ms": 91.18,
+    "status_distribution": {
+      "200": 3000
+    }
+  },
+  {
+    "scenario": "Root / Endpoint - High Stress Burst",
+    "total_requests": 5000,
+    "concurrency": 100,
+    "successful_requests": 5000,
+    "errors": 0,
+    "total_duration_sec": 4.329,
+    "rps": 1155.07,
+    "min_ms": 24.39,
+    "mean_ms": 85.89,
+    "p50_ms": 85.72,
+    "p90_ms": 106.5,
+    "p95_ms": 114.09,
+    "p99_ms": 130.7,
+    "max_ms": 162.96,
+    "status_distribution": {
+      "200": 5000
+    }
+  },
+  {
+    "scenario": "POST /ask - Baseline Load (Concurrency: 10)",
+    "total_requests": 1000,
+    "concurrency": 10,
+    "successful_requests": 1000,
+    "errors": 0,
+    "total_duration_sec": 1.369,
+    "rps": 730.52,
+    "min_ms": 0.86,
+    "mean_ms": 1.36,
+    "p50_ms": 1.19,
+    "p90_ms": 1.95,
+    "p95_ms": 2.41,
+    "p99_ms": 3.17,
+    "max_ms": 4.14,
+    "status_distribution": {
+      "200": 1000
+    }
+  },
+  {
+    "scenario": "POST /ask - Moderate Load (Concurrency: 50)",
+    "total_requests": 2500,
+    "concurrency": 50,
+    "successful_requests": 2500,
+    "errors": 0,
+    "total_duration_sec": 6.443,
+    "rps": 388.02,
+    "min_ms": 0.69,
+    "mean_ms": 2.57,
+    "p50_ms": 2.03,
+    "p90_ms": 4.23,
+    "p95_ms": 5.23,
+    "p99_ms": 12.76,
+    "max_ms": 34.4,
+    "status_distribution": {
+      "200": 2500
+    }
+  },
+  {
+    "scenario": "POST /ask - High Concurrency Stress (Concurrency: 100)",
+    "total_requests": 5000,
+    "concurrency": 100,
+    "successful_requests": 5000,
+    "errors": 0,
+    "total_duration_sec": 11.698,
+    "rps": 427.41,
+    "min_ms": 0.94,
+    "mean_ms": 2.33,
+    "p50_ms": 2.23,
+    "p90_ms": 3.64,
+    "p95_ms": 3.97,
+    "p99_ms": 4.9,
+    "max_ms": 52.18,
+    "status_distribution": {
+      "200": 5000
+    }
+  },
+  {
+    "scenario": "POST /auth/login - Auth Traffic (Concurrency: 50)",
+    "total_requests": 2000,
+    "concurrency": 50,
+    "successful_requests": 2000,
+    "errors": 0,
+    "total_duration_sec": 3.982,
+    "rps": 502.32,
+    "min_ms": 0.88,
+    "mean_ms": 1.98,
+    "p50_ms": 1.66,
+    "p90_ms": 3.27,
+    "p95_ms": 3.62,
+    "p99_ms": 4.66,
+    "max_ms": 9.94,
+    "status_distribution": {
+      "200": 2000
+    }
+  },
+  {
+    "scenario": "GET /users/profile - User Route (Concurrency: 50)",
+    "total_requests": 2000,
+    "concurrency": 50,
+    "successful_requests": 2000,
+    "errors": 0,
+    "total_duration_sec": 3.264,
+    "rps": 612.78,
+    "min_ms": 0.75,
+    "mean_ms": 1.62,
+    "p50_ms": 1.32,
+    "p90_ms": 2.86,
+    "p95_ms": 3.27,
+    "p99_ms": 4.02,
+    "max_ms": 9.23,
+    "status_distribution": {
+      "200": 2000
+    }
+  },
+  {
+    "scenario": "POST /ask - Extreme Spike (Concurrency: 200)",
+    "total_requests": 6000,
+    "concurrency": 200,
+    "successful_requests": 6000,
+    "errors": 0,
+    "total_duration_sec": 10.378,
+    "rps": 578.16,
+    "min_ms": 0.74,
+    "mean_ms": 1.72,
+    "p50_ms": 1.44,
+    "p90_ms": 2.86,
+    "p95_ms": 3.26,
+    "p99_ms": 4.09,
+    "max_ms": 7.76,
+    "status_distribution": {
+      "200": 6000
+    }
+  },
+  {
+    "scenario": "Fault Injection: Upstream Down (503 Service Unavailable)",
+    "total_requests": 1000,
+    "concurrency": 50,
+    "successful_requests": 1000,
+    "errors": 0,
+    "total_duration_sec": 0.561,
+    "rps": 1782.43,
+    "min_ms": 0.31,
+    "mean_ms": 0.55,
+    "p50_ms": 0.46,
+    "p90_ms": 0.88,
+    "p95_ms": 1.07,
+    "p99_ms": 1.68,
+    "max_ms": 2.78,
+    "status_distribution": {
+      "503": 1000
+    }
+  },
+  {
+    "scenario": "Fault Injection: Upstream Timeout (504 Gateway Timeout)",
+    "total_requests": 1000,
+    "concurrency": 50,
+    "successful_requests": 1000,
+    "errors": 0,
+    "total_duration_sec": 0.798,
+    "rps": 1253.83,
+    "min_ms": 0.32,
+    "mean_ms": 0.79,
+    "p50_ms": 0.58,
+    "p90_ms": 1.42,
+    "p95_ms": 1.66,
+    "p99_ms": 2.11,
+    "max_ms": 4.15,
+    "status_distribution": {
+      "504": 1000
+    }
+  },
+  {
+    "scenario": "POST /ask - Pooled Client Optimization (Concurrency: 100)",
+    "total_requests": 5000,
+    "concurrency": 100,
+    "successful_requests": 5000,
+    "errors": 0,
+    "total_duration_sec": 7.63,
+    "rps": 655.27,
+    "min_ms": 0.69,
+    "mean_ms": 1.52,
+    "p50_ms": 1.26,
+    "p90_ms": 2.51,
+    "p95_ms": 2.85,
+    "p99_ms": 3.7,
+    "max_ms": 6.26,
+    "status_distribution": {
+      "200": 5000
+    }
+  }
+]
